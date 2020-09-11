@@ -77,7 +77,7 @@ int main(){
 }
 ```
 
-![](C:/Users/34984/AppData/Roaming/Typora/draftsRecover/images/202009100954.png)
+![](images/202009100954.png)
 
 * **数组类型**
 
@@ -170,7 +170,7 @@ int main(){
 }
 ```
 
-![](C:/Users/34984/AppData/Roaming/Typora/draftsRecover/images/202009101613.png)
+![](images/202009101613.png)
 
 ```c++
 #include<iostream>
@@ -252,7 +252,7 @@ int main(){
 }
 ```
 
-![](images\202009101920.png)
+![](images/202009101920.png)
 
 ## 控制语句(略)
 
@@ -407,7 +407,7 @@ int main(){
 }
 ```
 
-![](images\202009102159.png)
+![](images/202009102159.png)
 
 ## 析构函数
 
@@ -430,7 +430,7 @@ int main(){
 }
 ```
 
-![](images\202009102208.png)
+![](images/202009102208.png)
 
 ## 静态成员
 
@@ -474,7 +474,7 @@ int main(){
 }
 ```
 
-![](images\202009102234.png)
+![](images/202009102234.png)
 
 ## 对象指针访问
 
@@ -505,7 +505,7 @@ int main(){
 }
 ```
 
-![](images\202009102248.png)
+![](images/202009102248.png)
 
 ## this指针：指向本类对象的指针。
 
@@ -543,14 +543,14 @@ void Student::setData(int age,string name,char sex){//新·修改函数
 
 可以发现stu3也调用了析构函数
 
-![](images\202009102314.png)
+![](images/202009102314.png)
 
 ## 继承与派生-继承的概念与声明
 
 > 父类（基类）和子类（派生类）
 >        Person类与Student类。
 
-![](images\202009102318.png)
+![](images/202009102318.png)
 
 > **多重继承//D继承自A,B,C类，当父类之间有相似方法时，容易造成混淆
 >     class D:A,B,C
@@ -586,16 +586,16 @@ class Student:Person{//继承自Person类
 1. 公有继承。基类的公有成员和保护成员在派生类中保持原有访问属性，其私有成员仍为基类私
    有。
 
-   ![](images\202009102329(1).png)
+   ![](images/202009102329(1).png)
 
 2. 私有继承。基类的公有成员和保护成员在派生类中成了私有成员，其私有成员仍为基类私有。
 
-   <img src="images\202009102329(2).png" style="zoom: 50%;" />
+   <img src="images/202009102329(2).png" style="zoom: 50%;" />
 
 3. 受保护的继承。基类的公有成员和保护成员在派生类中成了保护成员，其私有成员仍为基类私
    有。保护成员不能被外界引用，但是可以被派生类成员访问。即：在main函数中访问保护成员函数时不可行的。
 
-   <img src="images\202009102329(3).png" style="zoom:60%;" />
+   <img src="images/202009102329(3).png" style="zoom:60%;" />
 
 ```c++
 #include<iostream>
@@ -735,14 +735,14 @@ int main(){
 }
 ```
 
-![](images\202009110022.png)
+![](images/202009110022.png)
 
 ## 多态与虚函数-虚函数
 
 * 虚函数实例：函数结果不同
 * 例如:“几何图形”类的绘图方法，在它的子类“椭圆形”和“三角形”中也都有“绘图”方法，但是“绘图”方法功能不同。
 
-![](images\202009110028.png)
+![](images/202009110028.png)
 
 ```c++
 #include<iostream>
@@ -794,7 +794,7 @@ int main(){
 	
 ```
 
-![](images\202009110050.png)
+![](images/202009110050.png)
 
 ## 虚函数的访问
 
@@ -821,7 +821,7 @@ int main(){
 }
 ```
 
-![](images\202009110059.png)
+![](images/202009110059.png)
 
 ## 纯虚函数
 
@@ -832,4 +832,4 @@ int main(){
          virtual   <函数类型>   <虚函数名称>  (<参数列表>)=0
   * =0就是纯虚函数，存在的意义就是让子类重写。
 
-![](images\202009111001.png)
+![](images/202009111001.png)
